@@ -1,0 +1,128 @@
+* {padding: 0;}
+
+body {
+    background-color: rgba(116, 13, 13, 0.486);
+}
+
+.container {
+    display: flex;
+}
+
+.form , .taskList {
+    flex-basis: 50%;
+    background-position: center;
+    background-size: cover;
+} 
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('img/photo\ by\ HoliHo\ z\ Pexels.jpg');
+    opacity: .9;
+    transition: .5s linear;
+}  
+
+.form input {
+    display: flex;
+    text-align: center;
+    margin: 70px auto;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.form button {
+    padding: 5px 14px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    border: 3px solid black;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 120px;
+    color: rgb(2, 2, 39);
+    background-color: rgb(11, 137, 141);
+    border: none;
+    padding: 5px 10px;
+}
+
+.taskList {
+    display: flex;
+    justify-content: center;
+    background-image: url('img/photo\ by\ FWStudio\,\ Pexels.jpg');
+    opacity: .9;
+}
+
+.taskList ul {
+    margin-top: 30px;
+}
+
+.taskList li {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 25px;
+}
+.taskList button {
+    margin-left: 5px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0 0 3px white;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+}
+
+.time, .date {
+    display: inline-block;
+    padding: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* Media: */
+@media (max-width: 560px) {
+    .form {
+        max-width: 100%;
+    } 
+    .form input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+    .form input {
+        margin: 20px auto;
+    }
+    .form button {
+        margin-bottom: 20px;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    .taskList {
+        display: block;
+    }
+    .taskList ul {
+        margin: 5px;
+        overflow: hidden;
+    }
+    .taskList li {
+        display: block;
+    }
+    .time, .date {
+        padding: 20px;
+        display: block;
+    }
+}
+
