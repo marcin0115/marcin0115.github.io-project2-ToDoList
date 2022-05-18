@@ -2,8 +2,8 @@
 
 To do list App created with JavaScrit.
 
-The main container is a section with a form who enable addition new tasks, and div with a list of current tasks.
-Additional footer allow to check the time and date.
+The main container is a section with a form which enables addition of new tasks and div with a list of current tasks.
+Additional footer allows to check the time and date.
 
 ### Technologies
 Project is created with:
